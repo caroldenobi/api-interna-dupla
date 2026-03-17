@@ -1,76 +1,61 @@
-Aqui vai uma versão **mais clean e minimalista** do README.md. Copie e cole direto:
+# Projeto API - Séries Poster Explorer
 
-```markdown
-# Séries Poster Explorer
+👥 **Integrantes**
 
-API + Frontend para exibir pôsteres de séries via rede local.
+- Ana Carolina Santos Denobi 
+- Rayka Dom Pedro Hirata
 
-Séries disponíveis: Black Mirror, Bridgerton, Grey's Anatomy, Pretty Little Liars.
+📌 **Tema da API**  
+Pôsteres de séries famosas (Black Mirror, Bridgerton, Grey's Anatomy, Pretty Little Liars)
 
-## Estrutura
+📖 **Descrição do Projeto**  
+Este projeto consiste em uma aplicação com backend e frontend integrados via rede local.  
+O backend fornece pôsteres de séries através de uma API REST simples, enquanto o frontend consome esses dados e exibe de forma interativa com botão aleatório e busca por código.
 
-```
-api-carros/
-├── backend/
-│   ├── data/
-│   │   ├── fotos/          ← black.jpg, bridger.jpg, greys.jpg, pll.jpg
-│   │   └── carros.json
-│   └── server.js
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-└── README.md
-```
+🚀 **Tecnologias Utilizadas**
 
-## Como rodar
+- **Backend**: Node.js + Express + CORS  
+- **Frontend**: HTML5 + CSS3 + JavaScript (fetch API)  
+- **Comunicação**: Rede local (IP fixo)
 
-### Backend
-Na pasta `backend`:
+⚙️ **Como executar o Backend**
 
-```bash
+1. Acesse a pasta do backend:
+cd backend
+text2. Instale as dependências:
 npm install
+text3. Execute o servidor:
 node server.js
-```
+textVocê verá:
+🎬 API de Séries rodando em http://10.106.208.35:3000
+text💻 **Como executar o Frontend**
 
-Aguarde a mensagem:
-```
-API de Séries rodando em http://10.106.208.35:3000
-```
+1. Acesse a pasta do frontend:
+cd frontend
+text2. Abra o arquivo `index.html` no navegador:
+- Duplo clique no arquivo  
+- Ou use **Live Server** no VS Code (recomendado)
 
-### Frontend
-Na pasta `frontend`:
+🌐 **Endereço da API**
 
-- Abra `index.html` no navegador (duplo clique ou Live Server)
+http://10.106.208.35:3000
 
-### Teste
-- Clique em “Pôster Aleatório”
-- Ou digite: `black`, `bridger`, `greys`, `pll` e clique em “Buscar Série”
+**Rotas principais:**
 
-## Rotas da API
-
-- `GET /api/series/aleatorio`  
-- `GET /api/series/black`  
-- `GET /api/series/bridger`  
-- `GET /api/series/greys`  
-- `GET /api/series/pll`
-
-Exemplo:  
+- Aleatório:  
 http://10.106.208.35:3000/api/series/aleatorio
 
-## Problemas comuns
+- Por série:  
+http://10.106.208.35:3000/api/series/black  
+http://10.106.208.35:3000/api/series/bridger  
+http://10.106.208.35:3000/api/series/greys  
+http://10.106.208.35:3000/api/series/pll
 
-- **Porta 3000 ocupada**  
-  ```bash
-  netstat -ano | findstr :3000
-  taskkill /PID [número] /F
-  ```
+🔍 **Como testar**
 
-- Imagem não carrega → confirme que o servidor está rodando e que o IP está correto em `script.js`
+- Clique em **Pôster Aleatório**  
+- Ou digite no campo: `black`, `bridger`, `greys` ou `pll` e clique em **Buscar Série**
 
-Feito para a atividade de integração front/back.
-```
+🍿 Divirta-se explorando os pôsteres das séries!
 
-Essa versão é bem mais curta, direta e visualmente limpa — ideal para avaliação rápida.
-
-Se quiser ainda mais enxuta (tipo só 10 linhas), avisa que reduzo mais. Boa sorte na entrega!
+Feito com carinho para a atividade de integração front + back via rede local 💜
