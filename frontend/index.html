@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎬 Séries Poster Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Séries Poster Explorer</h1>
+    <p class="subtitle">Descubra pôsteres de séries icônicas!</p>
+
+    <div class="car-area" id="carArea">   <!-- mantive id, mas mude o nome da classe se quiser -->
+      <img src="" alt="Pôster da série" id="carImage">
+      <div id="carName"></div>
+    </div>
+
+    <div class="controls">
+      <button id="randomBtn">🎲 Pôster Aleatório</button>
+    </div>
+
+    <div class="search">
+      <input
+        type="text"
+        id="carInput"
+        placeholder="Digite o código (ex: black, bridger, greys, pll)"
+      >
+      <button id="searchBtn">🔍 Buscar Série</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
